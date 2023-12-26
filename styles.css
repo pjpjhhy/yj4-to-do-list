@@ -1,0 +1,127 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+    height: 30px; 
+    padding: 5px;
+    font-size: 16px; 
+    border: 3px solid #ccc; 
+    border-radius: 5px; 
+}
+
+
+input[type="text"]:focus {
+    outline: none; 
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px dodgerblue; 
+}
+
+   
+   form {
+        width: 700px;
+        margin: auto;
+        padding: 40px;
+    }
+    input {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    ul {
+        display: flex; 
+        flex-direction: column;
+        gap: 10px; 
+        padding: 0 220px; 
+    }
+    li {
+        list-style: none;
+        font-weight: bold;
+        text-decoration: underline;
+        width: fit-content;
+        margin: 5px;
+        font-size: 22px;
+    }
+    button {
+        margin: 0 10px; 
+    }
+/* 시계 */
+    .clock-container {
+        width: 224px; 
+        height : 100px; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        border: 4px solid dodgerblue;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 5px;
+    }
+    #clock {
+        font-size: 50px;
+        font-weight: 800;
+        color: dodgerblue;
+    }
+/* 이미지 */
+    .rand-image-container {
+        position: relative;
+        width: 100%; 
+        height: 780px;
+    }
+    .rand-image-container #rand-image {
+        width: 100%; 
+        height: 100%; 
+        
+    }
+    .rand-image-container #rand-image::after{
+        content: ""; 
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        
+    }
+    .rand-image-container #rand-image img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+    }
+    #quotes {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+    }
+    .dragging {
+        opacity: 0.1;
+    }
+
+    /* 날씨 */
+    .weather-icon {
+        position: flex;
+        border: 3px solid #333; 
+        opacity: 0.6; 
+    }
+
+  
+/* 온도 스타일링 */
+.temperature {
+    font-size: 24px; 
+    color: rgb(45, 16, 148); 
+    font-weight: 600;
+}
+
+/* 날씨 텍스트 스타일링 */
+.weather-text {
+    font-size: 32px; 
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+   
+}
+
